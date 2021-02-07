@@ -8,24 +8,27 @@ If you intend to train on your custom dataset, please prepare data with the same
 - tensorflow==1.15.0
 - keras==2.0.8
 
-Other packages can be installed by running the command "pip install -r requirements.txt"
+Other packages can be installed by running the command "pip install -r requirements.txt".
 
 # Train 
-To train from scratch, please run this command :
+To train from scratch, please run this command:
 "python samples/wheat/train.py train --dataset=data --model='' --no_loadmodel"
 
-After training completed, weight will be saved in folder "logs" 
+After training completed, weight will be saved in folder "logs".
 
 If you have trained at least once and want to use trained weight for continue training, please run the command of format 
-"python samples/wheat/train.py train --dataset=data --model=path_to_weight --loadmodel"
+"python samples/wheat/train.py train --dataset=data --model=path_to_weight --loadmodel".
 
-Please notice that inside class "CoCoConfig" of the file samples/wheat/train.py, we need to set NUM_CLASSES equal to 1 + number of classes, where 1 counts for the background class. For example, this project only detect one class "wheat", so i will set NUM_CLASSES = 1 + 1
+Please notice that inside class "CoCoConfig" of the file samples/wheat/train.py, we need to set NUM_CLASSES equal to 1 + number of classes, where 1 counts for the background class. For example, this project only detect one class "wheat", so i will set NUM_CLASSES = 1 + 1.
 
 # Test
 To test, please run command of format 
+
 python samples/wheat/train.py evaluate --dataset=data --model=weight_path --loadmodel
 
-For example:  python samples/wheat/train.py evaluate --dataset=data --model=logs/coco20210113T1106/mask_rcnn_coco_0210.h5 --loadmodel
+For example:  
+
+python samples/wheat/train.py evaluate --dataset=data --model=logs/coco20210113T1106/mask_rcnn_coco_0210.h5 --loadmodel
 
 
 
