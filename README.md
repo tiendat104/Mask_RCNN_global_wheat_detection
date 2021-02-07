@@ -12,7 +12,7 @@ Other packages can be installed by running the command "pip install -r requireme
 
 # Train 
 To train from scratch, please run this command:
-"python samples/wheat/train.py train --dataset=data --model='' --no_loadmodel"
+"python samples/wheat/train.py train --dataset=data --model=' ' --no_loadmodel"
 
 After training completed, weight will be saved in folder "logs".
 
