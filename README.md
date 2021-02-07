@@ -30,6 +30,9 @@ For example:
 
 python samples/wheat/train.py evaluate --dataset=data --model=logs/coco20210113T1106/mask_rcnn_coco_0210.h5 --loadmodel
 
+# Reference
+The code from this project is based on https://github.com/matterport/Mask_RCNN . For any issue during installation or training, please refer to this link so that you can find more helps from the community.
+
 
 
 
